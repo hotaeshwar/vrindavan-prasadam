@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" width="100" height="160" fill="none">
+  <defs>
+    <linearGradient id="tilakGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885"/>
+      <stop offset="30%" stop-color="#FBBF24"/>
+      <stop offset="70%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+  </defs>
+  <!-- Vaishnava Urdhva Pundra U -->
+  <path d="M26 10 V82 C26 96 36 107 50 107 C64 107 74 96 74 82 V10 H60 V82 C60 88 55 93 50 93 C45 93 40 88 40 82 V10 H26 Z" fill="url(#tilakGold)"/>
+  <!-- Sacred Tulsi Leaf Base -->
+  <path d="M50 104 C38 116 34 130 50 154 C66 130 62 116 50 104 Z" fill="url(#tilakGold)"/>
+</svg>

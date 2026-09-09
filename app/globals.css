@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=Rozha+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #FFF9ED;
+  --primary-saffron: #D97706;
+  --dark-brown: #5B3513;
+  --card-saffron: #FFF3D6;
+  --whatsapp-green: #25D366;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FFF9ED;
+  color: #5B3513;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #FFF9ED;
+  /* Subtle sacred geometric background pattern */
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(217, 119, 6, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 0% 50%, rgba(217, 119, 6, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 100% 80%, rgba(217, 119, 6, 0.05) 0%, transparent 40%),
+    radial-gradient(rgba(217, 119, 6, 0.06) 1px, transparent 0);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px;
+  background-position: center, center, center, center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Devotional Headings */
+h1, h2, h3, .font-serif {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+/* Prevent iOS zooming on input focus by ensuring >= 16px */
+input, select, textarea, button {
+  font-size: 16px;
+}
+
+/* Custom Devotional Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF3D6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D97706;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B45309;
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Card Glow Effect */
+.card-divine-border {
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  box-shadow: 0 4px 20px -2px rgba(91, 53, 19, 0.05), 0 2px 6px -1px rgba(217, 119, 6, 0.06);
+}
+
+/* Subtle sacred border flourish */
+.sacred-border-gold {
+  position: relative;
+}
+.sacred-border-gold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #D97706, transparent);
+}
